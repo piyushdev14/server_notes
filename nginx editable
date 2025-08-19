@@ -1,0 +1,34 @@
+ 
+
+Basic Nginx commands - :
+1.	Sudo apt update – to update any package
+2.	Sudo apt install nginx – to install nginx
+3.	Sudo systemctl status nginx – to check nginx status (active or inactive)
+4.	Sudo systemctl restart nginx – to restart the server
+5.	Sudo systemctl start nginx – to start the nginx server
+6.	Sudo systemctl stop nginx – to stop the nginx server
+7.	Sudo systemctl reload nginx – to reload the nginx like refresh the chrome page.
+Basic File and folder structure - :
+1.	 Cd /etc/nginx -the configuration files sotred in etc of third party app
+2.	Config.d - t - 
+3.	Sites available - 
+4.	Sites enabled -
+5.	Nginx.conf –
+  
+
+Cd sites-enabled
+Ls – in starting we get the default folder where we get the server block and get the port and also the path of that .
+Sudo vim default
+Where we see below image
+  
+
+From sites enabled default we find var/www/html when we cd 
+We find index.debian.html where we find the html file when we run the https:localhost we see the page that is stored in the index Debian.html and in sites-enabled we see the page.
+
+Nginx work on master-worker process. - :
+Sudo nginx -t -: to check the syntax if it is successful then it return success otherwise it gives the error.
+
+In short all I know 
+The first thing like I know about is we first create the server and the location block in the config.d file in nginx and after that we go to var www in ubuntu and create the folder like in my case we should copy the repo and clone it.
+Like Sudo git clone <URL>  and the folder name.
+
